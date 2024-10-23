@@ -29,7 +29,7 @@ const CartPage = () => {
                     <p>Quantity: {item.quantity}</p>
                     <button onClick={() => incrementQuantity(item.id)}>+</button>
                     <button onClick={() => decrementQuantity(item.id)} disabled={item.quantity <= 1}>-</button>
-                    <button onClick={() => removeFromCart(item.id)}><i class="bi bi-trash3"></i></button>
+                    <button onClick={() => removeFromCart(item.id)}>Remove</button>
                 </div>
             ))}
             <h3>Total Items: {totalItems}</h3>
