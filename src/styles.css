@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #007bff;
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    flex-direction: column; /* Stack products vertically */
+    margin-bottom: 20px; /* Space below the product list */
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Adds spacing between product items */
+    padding: 10px;
+    background-color: #fff; /* Background for products */
+    border: 1px solid #ddd; /* Border around products */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.product-item img {
+    width: 50px; /* Image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.product-item h3 {
+    flex-grow: 1; /* Takes up available space */
+    font-size: 10px; /* Decrease product name size */
+} 
+
+.product-item p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px; /* Smaller padding */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+/* CartPage Styles */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Adds spacing between cart items */
+    padding: 10px; /* Add padding for better spacing */
+    background-color: #fff; /* Optional: background for items */
+    border: 1px solid #ddd; /* Optional: border around items */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.cart-item img {
+    width: 40px; /* Smaller image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.cart-item h3 {
+    flex-grow: 1; /* Takes up available space */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.cart-item p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9rem; /* Slightly smaller font for quantity */
+}
+
+.cart-total {
+    margin-top: 20px; /* Space above total section */
+}
+
+.cart-total h3 {
+    font-size: 0.9rem; /* Decrease font size for total items */
+}
+
+.cart-total p {
+    font-size: 0.8rem; /* Decrease font size for total price */
+}
+
+/* Checkout Page Styles */
+form {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .cart-item {
+        padding: 10px; /* Maintain padding */
+    }
+
+    .product-item {
+        padding: 10px; /* Maintain padding */
+    }
+
+    form {
+        padding: 15px; /* Maintain padding */
+    }
+
+    form input, form button {
+        padding: 8px; /* Maintain padding */
+    }
+}
